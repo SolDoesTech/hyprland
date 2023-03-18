@@ -52,6 +52,7 @@ if [[ $WIFI == "Y" || $WIFI == "y" ]]; then
     echo -e "\n"
     echo -e "Restarting NetworkManager service...\n"
     sudo systemctl restart NetworkManager
+    sleep 3
 fi
 
 ### Install all of the above pacakges ####
@@ -68,6 +69,7 @@ if [[ $INST == "Y" || $INST == "y" ]]; then
     # Start the bluetooth service
     echo -e "Starting the Bluetooth Service...\n"
     sudo systemctl enable --now bluetooth.service
+    sleep 2
 fi
 
 ### Copy Config Files ###
@@ -111,7 +113,9 @@ if [[ $ROG == "Y" || $ROG == "y" ]]; then
     sudo pacman -S --noconfirm asusctl supergfxctl rog-control-center
     echo -e "Activating ROG services...\n"
     sudo systemctl enable --now power-profiles-daemon.service
+    sleep 2
     sudo systemctl enable --now supergfxd
+    sleep 2
 fi
 
 ### Script is done ###
