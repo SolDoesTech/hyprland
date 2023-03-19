@@ -30,8 +30,8 @@
 # bluez-utils: command line utilities to interact with bluettoth devices
 # lxappearance: used to set GTK theme
 # xfce4-settings: set of tools for xfce, needed to set GTK theme
-# darcula-gtk: the Dracula theme, it fits the overall look and feel
-# darcula-icons-git" set of icons to go with the Dracula theme
+# dracula-gtk-theme: the Dracula theme, it fits the overall look and feel
+# dracula-icons-git" set of icons to go with the Dracula theme
 # xdg-desktop-portal-hyprland-git: xdg-desktop-portal backend for hyprland
 
 #### Check for yay ####
@@ -64,7 +64,7 @@ if [[ $INST == "Y" || $INST == "y" ]]; then
     polkit-gnome python-requests starship \
     swappy grim slurp pamixer brightnessctl gvfs \
     bluez bluez-utils lxappearance xfce4-settings \
-    darcula-gtk darcula-icons-git xdg-desktop-portal-hyprland-git
+    dracula-gtk-theme dracula-icons-git xdg-desktop-portal-hyprland-git
 
     # Start the bluetooth service
     echo -e "Starting the Bluetooth Service...\n"
