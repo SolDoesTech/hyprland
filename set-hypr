@@ -38,6 +38,7 @@
 ISYAY=/sbin/yay
 if [ -f "$ISYAY" ]; then 
     echo -e "yay was located, moving on.\n"
+    yay -Suy
 else 
     echo -e "yay was not located, please install yay. Exiting script.\n"
     exit 
