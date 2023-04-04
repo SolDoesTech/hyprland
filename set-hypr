@@ -6,7 +6,7 @@
 #
 # Below is a list of the packages that would be installed
 #
-# hyprland-bin: This is the Hyprland compositor
+# hyprland: This is the Hyprland compositor
 # kitty: This is the default terminal
 # waybar-hyprland: This is a fork of waybar with Hyprland workspace support
 # swaybg: This is used to set a desktop background image
@@ -59,7 +59,7 @@ fi
 ### Install all of the above pacakges ####
 read -n1 -rep 'Would you like to install the packages? (y,n)' INST
 if [[ $INST == "Y" || $INST == "y" ]]; then
-    yay -S --noconfirm hyprland-bin kitty waybar-hyprland \
+    yay -S --noconfirm hyprland kitty waybar-hyprland \
     swaybg swaylock-effects wofi wlogout mako thunar \
     ttf-jetbrains-mono-nerd noto-fonts-emoji \
     polkit-gnome python-requests starship \
