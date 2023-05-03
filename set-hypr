@@ -117,7 +117,7 @@ if [[ $ROG == "Y" || $ROG == "y" ]]; then
     echo -e "\n[g14]\nServer = https://arch.asus-linux.org" | sudo tee -a $LOC
     echo -e "\n"
     echo -e "Update the system...\n"
-    sudo pacman -Suy
+    sudo pacman -Sy
 
     echo -e "Installing ROG pacakges...\n"
     sudo pacman -S --noconfirm asusctl supergfxctl rog-control-center
