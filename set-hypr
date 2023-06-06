@@ -8,7 +8,7 @@
 #
 # hyprland: This is the Hyprland compositor
 # kitty: This is the default terminal
-# waybar-hyprland: This is a fork of waybar with Hyprland workspace support
+# waybar: Waybar now has hyprland support
 # swaybg: This is used to set a desktop background image
 # swaylock-effects: This allows for the locking of the desktop its a fork that adds some editional visual effects
 # wofi: This is an application launcher menu
@@ -32,7 +32,7 @@
 # xfce4-settings: set of tools for xfce, needed to set GTK theme
 # dracula-gtk-theme: the Dracula theme, it fits the overall look and feel
 # dracula-icons-git" set of icons to go with the Dracula theme
-# xdg-desktop-portal-hyprland-git: xdg-desktop-portal backend for hyprland
+# xdg-desktop-portal-hyprland: xdg-desktop-portal backend for hyprland
 
 #### Check for yay ####
 ISYAY=/sbin/yay
@@ -59,13 +59,13 @@ fi
 ### Install all of the above pacakges ####
 read -n1 -rep 'Would you like to install the packages? (y,n)' INST
 if [[ $INST == "Y" || $INST == "y" ]]; then
-    yay -S --noconfirm hyprland kitty waybar-hyprland \
+    yay -S --noconfirm hyprland kitty waybar \
     swaybg swaylock-effects wofi wlogout mako thunar \
     ttf-jetbrains-mono-nerd noto-fonts-emoji \
     polkit-gnome python-requests starship \
     swappy grim slurp pamixer brightnessctl gvfs \
     bluez bluez-utils lxappearance xfce4-settings \
-    dracula-gtk-theme dracula-icons-git xdg-desktop-portal-hyprland-git
+    dracula-gtk-theme dracula-icons-git xdg-desktop-portal-hyprland
 
     # Start the bluetooth service
     echo -e "Starting the Bluetooth Service...\n"
